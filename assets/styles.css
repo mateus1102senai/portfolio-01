@@ -1,3 +1,49 @@
-h1 {
-    color:rgb(255, 0, 0)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    boder: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --secundary-bg-color: #080808;
+    --text-color: #ffffff;
+    --main-color: #ff0000;
+}
+
+body{
+    background-color: black;
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 16rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: bluer(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo spam {
+    color: var(--main-color);
+    text-shandow: 0 0 5px var(--main-color);
 }
